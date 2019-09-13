@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Employee Form"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="69dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Name: "
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/edit_name"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Gender"
+                android:textSize="20dp" />
+
+        <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+            <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Male"
+                    android:textSize="20sp"
+                    android:layout_marginRight="20dp"/>
+            <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="20sp"
+                    android:layout_marginRight="20dp"/>
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="E-mail: "
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Salary: "
+                android:textSize="20sp" />
+
+        <EditText
+                android:id="@+id/edit_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_marginTop="10sp"
+                android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+
+        <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="10dp"
+                android:background="#00FC05"
+                android:text="ADD"
+                android:textSize="14sp" />
+
+        <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="10dp"
+                android:background="#FF7A7A"
+                android:text="CANCEL"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+    </TableRow>
+
+</LinearLayout>
